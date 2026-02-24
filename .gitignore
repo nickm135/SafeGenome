@@ -1,0 +1,8 @@
+config.py
+venv/
+data/raw/
+data/features/
+data/experimental_chromatin/
+__pycache__/
+*.pyc
+.DS_Store
