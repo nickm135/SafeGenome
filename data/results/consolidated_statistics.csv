@@ -1,0 +1,11 @@
+comparison,test,statistic,p_value,n,effect_size,significant_005
+A vs C,"Wilcoxon signed-rank (per-guide, two-sided)",,0.93988037109375,16,0.011440660234969813,False
+B vs C,"Wilcoxon signed-rank (per-guide, two-sided)",,0.5700608835629815,16,0.01949461111130979,False
+A vs B,"Wilcoxon signed-rank (per-guide, two-sided)",,0.860260009765625,16,-0.008053950876339977,False
+A vs C,"Paired t-test (per-guide, two-sided)",,0.7519324274954367,16,0.011440660234969813,False
+B vs C,"Paired t-test (per-guide, two-sided)",,0.4488720346753607,16,0.01949461111130979,False
+A vs B,"Paired t-test (per-guide, two-sided)",,0.7681606492206496,16,-0.008053950876339977,False
+A vs C,Guide-level permutation (10k iter),,0.383,16,0.011440660234969847,False
+B vs C,Guide-level permutation (10k iter),,0.2335,16,0.019494611111309776,False
+A vs C,Paired bootstrap on pooled OOF (10k resamples),,0.0001,10000,0.06240762838248626,True
+B vs C,Paired bootstrap on pooled OOF (10k resamples),,0.4294,10000,0.002937958538243801,False

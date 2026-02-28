@@ -1,0 +1,3 @@
+observed_auprc_inferior,observed_auprc_superior,observed_delta,n_bootstrap,n_valid,count_inferior_ge_superior,p_value,comparison
+0.420607776955197,0.4830154053376833,0.06240762838248626,10000,10000,1,0.0001,A_vs_C
+0.4800774467994395,0.4830154053376833,0.002937958538243801,10000,10000,4294,0.4294,B_vs_C

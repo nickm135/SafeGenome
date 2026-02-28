@@ -1,0 +1,7 @@
+cell_type,model,n_guides,mean_auprc,std_auprc,median_auprc,guide_ids
+K562,A,12,0.7449,0.2171,0.8388,"sg1,sg10,sg11,sg12,sg2,sg3,sg4,sg5,sg6,sg7,sg8,sg9"
+K562,B,12,0.7165,0.2408,0.8077,"sg1,sg10,sg11,sg12,sg2,sg3,sg4,sg5,sg6,sg7,sg8,sg9"
+K562,C,12,0.7352,0.2083,0.7971,"sg1,sg10,sg11,sg12,sg2,sg3,sg4,sg5,sg6,sg7,sg8,sg9"
+HEK293,A,4,0.4506,0.2196,0.537,"HEK293_sgRNA1,HEK293_sgRNA2,HEK293_sgRNA3,HEK293_sgRNA4"
+HEK293,B,4,0.5034,0.2522,0.4673,"HEK293_sgRNA1,HEK293_sgRNA2,HEK293_sgRNA3,HEK293_sgRNA4"
+HEK293,C,4,0.5253,0.1465,0.5307,"HEK293_sgRNA1,HEK293_sgRNA2,HEK293_sgRNA3,HEK293_sgRNA4"
