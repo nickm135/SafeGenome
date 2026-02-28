@@ -1,8 +1,41 @@
+# Secrets / credentials
 config.py
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
 venv/
+
+# Large data (downloaded, generated, or cached)
 data/raw/
 data/features/
 data/experimental_chromatin/
-__pycache__/
-*.pyc
+
+# Model pickle files (large, reproducible from scripts)
+data/models/*.pkl
+
+# OS junk
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Internal tooling
+.claude/
+
+# Internal development docs
+CLAUDE.md
+PROJECT.md

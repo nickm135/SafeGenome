@@ -1,0 +1,20 @@
+pandas>=2.0
+openpyxl>=3.0          # For reading Excel files (.xlsx)
+numpy>=1.24
+scikit-learn>=1.3
+xgboost>=2.0
+shap>=0.42
+matplotlib>=3.7
+seaborn>=0.12
+pybigtools>=0.2     # For reading ENCODE BigWig files (Windows-compatible; replaces pyBigWig)
+pybedtools>=0.9     # For genomic interval operations
+pyliftover>=0.4     # For hg19 to hg38 coordinate conversion
+tqdm>=4.65          # Progress bars for long-running extraction
+requests>=2.31      # HTTP requests
+
+# Dev / test
+pytest>=7.0
+pytest-cov>=4.0
+
+# Install separately from GitHub clone:
+# alphagenome

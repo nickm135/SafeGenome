@@ -1,0 +1,165 @@
+========================================================================
+DEEPCRISPR SUPPLEMENTARY DATA ANALYSIS
+Source: Zhu et al. 2018 Genome Biology, PMC6020378
+  Additional File 7 (MOESM7): K562 cell line off-target dataset
+  Additional File 6 (MOESM6): 293-related cell line off-target dataset
+Downloaded from: https://static-content.springer.com/esm/art%3A10.1186
+  %2Fs13059-018-1459-4/MediaObjects/
+Date accessed: 2026-02-24
+========================================================================
+
+------------------------------------------------------------------------
+FILE: data/external/deepcrispr_moesm7_k562.xlsx  [MOESM7 (K562)]
+------------------------------------------------------------------------
+  Sheets: ['target', 'off-target']
+
+[Sheet: target]
+  (1) Columns (6): ['Target ID', 'Chromosome', 'Start', 'End', 'Strand', 'Target sgRNA']
+  (2) Number of sgRNAs: 12
+
+  sgRNA sequences:
+    sg1     chr=chr3    start=  46414493  strand=-  seq=AACACCAGTGAGTAGAGCGGAGG
+    sg2     chr=chr3    start=  46414489  strand=-  seq=CCAGTGAGTAGAGCGGAGGCAGG
+    sg3     chr=chr11   start=   5248198  strand=+  seq=CTTGCCCCACAGGGCAGTAACGG
+    sg4     chr=chr3    start=  46415002  strand=+  seq=GGTCCTGCCGCTGCTTGTCATGG
+    sg5     chr=chr1    start= 207265078  strand=+  seq=AATGACCACTACATCCTCAAGGG
+    sg6     chr=chr3    start=  46414496  strand=-  seq=ATGAACACCAGTGAGTAGAGCGG
+    sg7     chr=chr3    start=  46414489  strand=+  seq=CCTGCCTCCGCTCTACTCACTGG
+    sg8     chr=chr6    start=  43737291  strand=-  seq=GGGTGGGGGGAGTTTGCTCCTGG
+    sg9     chr=chr3    start=  46415068  strand=+  seq=AAATGAGAAGAAGAGGCACAGGG
+    sg10    chr=chr3    start=  46414423  strand=+  seq=TGACATCAATTATTATACATCGG
+    sg11    chr=chr3    start=  46415044  strand=-  seq=GACACCGAAGCAGAGTTTTTAGG
+    sg12    chr=chr3    start=  46415040  strand=+  seq=GAATCCTAAAAACTCTGCTTCGG
+
+[Sheet: off-target]
+  (1) Columns (8): ['OT-ID', 'Target ID', 'Chromosome', 'Start', 'End', 'Strand', 'OT', 'Cleavage Frequency']
+  (2) Total off-target entries: 120
+  (3) Label type: QUANTITATIVE Cleavage Frequency (regression, not binary)
+      Range: 0.0001 to 1.0000
+      Mean:  0.1746
+      CF > 0.01 ("positive"):  91/120
+      CF <= 0.01 (near-zero): 29/120
+      CF == 0 (strict zero):  0/120
+      CF == 1.0 (on-target?): 1
+
+  NOTE: All off-target ENTRIES are POSITIVE calls (pre-filtered detected sites).
+  There are NO explicit negative/uncut sites in this dataset.
+  Dataset represents verified off-targets with quantitative cleavage rates.
+
+  (4) Assay type: MIXED (paper states curated from GUIDE-seq, Digenome-seq,
+      BLESS, HTGTS, IDLV across the full dataset). K562 data cited from
+      ref [44] in DeepCRISPR paper — exact assay for K562 NOT SPECIFIED.
+      *** CRITICAL: If K562 data is Digenome-seq (cell-free), it has the
+      same limitation as CHANGE-seq — CANNOT be used as in-cell positive labels.
+      Verify by checking ref [44] in Zhu et al. 2018.
+
+  (5) Quantitative regression labels: YES (Cleavage Frequency, 0-1 scale)
+      Binary labels: NOT EXPLICITLY PROVIDED (all entries are positive calls)
+
+  Per-guide off-target site counts:
+    sg1   :   6 sites, CF range [0.0001, 1.0000]
+    sg10  :  13 sites, CF range [0.0162, 0.1991]
+    sg11  :   9 sites, CF range [0.0001, 0.7083]
+    sg12  :  13 sites, CF range [0.0001, 0.3032]
+    sg2   :  11 sites, CF range [0.0001, 0.8588]
+    sg3   :   4 sites, CF range [0.0417, 0.7176]
+    sg4   :  13 sites, CF range [0.0001, 0.2477]
+    sg5   :   7 sites, CF range [0.0833, 0.4838]
+    sg6   :  12 sites, CF range [0.0001, 0.9977]
+    sg7   :  11 sites, CF range [0.0001, 0.8218]
+    sg8   :   8 sites, CF range [0.0671, 0.8657]
+    sg9   :  13 sites, CF range [0.0001, 0.8287]
+
+------------------------------------------------------------------------
+FILE: data/external/deepcrispr_moesm6_293.xlsx  [MOESM6 (293)]
+------------------------------------------------------------------------
+  Sheets: ['target', 'off-target']
+
+[Sheet: target]
+  (1) Columns (6): ['Target ID', 'Chromosome', 'Start', 'End', 'Strand', 'Target sgRNA']
+  (2) Number of sgRNAs: 18
+
+  sgRNA sequences:
+    sg1     chr=chr6    start=  43737291  strand=-  seq=GGGTGGGGGGAGTTTGCTCCTGG
+    sg2     chr=chr11   start=  36594861  strand=+  seq=GCCTCTTTCCCACCCACCTTGGG
+    sg3     chr=chr2    start=  73161066  strand=+  seq=GTCACCTCCAATGACTAGGGTGG
+    sg4     chr=chr5    start=  87240597  strand=+  seq=GAACACAAAGCATAGACTGCGGG
+    sg5     chr=chr2    start=  73160982  strand=+  seq=GAGTCCGAGCAGAAGAAGAAGGG
+    sg6     chr=chrX    start=  48544540  strand=+  seq=CCCTGTGTCTCTGGATGGATGGG
+    sg7     chr=chr11   start=  22647332  strand=-  seq=GGAATCCCTTCTGCAGCACCTGG
+    sg8     chr=chr6    start=  43737454  strand=+  seq=GGTGAGTGAGTGTGTGCGTGTGG
+    sg9     chr=chr2    start=  73161174  strand=+  seq=GGCCAGGCTTTGGGGAGGCCTGG
+    sg10    chr=chrX    start=  48544569  strand=+  seq=TGGATGGAGGAATGAGGAGTTGG
+    sg11    chr=chr9    start= 110103688  strand=+  seq=GGGAAAGACCCAGCATCCGTGGG
+    sg12    chr=chr2    start=  73161007  strand=-  seq=GCGCCACCGGTTGATGTGATGGG
+    sg13    chr=chr2    start=  73161170  strand=-  seq=GCCTCCCCAAAGCCTGGCCAGGG
+    sg14    chr=chr11   start=  36594819  strand=+  seq=GACTTGTTTTCATTGTTCTCAGG
+    sg15    chr=chr9    start= 110184620  strand=+  seq=GGCCCAGACTGAGCACGTGATGG
+    sg16    chr=chr6    start=  43738556  strand=-  seq=GACCCCCTCCACCCCGCCTCCGG
+    sg17    chr=chr2    start=  73161046  strand=-  seq=GACATCGATGTCCTCCCCATTGG
+    sg18    chr=chr20   start=  31349756  strand=+  seq=GGCACTGCGGCTGGAGGTGGGGG
+
+[Sheet: off-target]
+  (1) Columns (8): ['OT-ID', 'Target ID', 'Chromosome', 'Start', 'End', 'Strand', 'OT', 'Cleavage Frequency']
+  (2) Total off-target entries: 536
+  (3) Label type: QUANTITATIVE Cleavage Frequency (regression, not binary)
+      Range: 0.0001 to 0.9954
+      Mean:  0.4422
+      CF > 0.01 ("positive"):  521/536
+      CF <= 0.01 (near-zero): 15/536
+      CF == 0 (strict zero):  0/536
+      CF == 1.0 (on-target?): 0
+
+  NOTE: All off-target ENTRIES are POSITIVE calls (pre-filtered detected sites).
+  There are NO explicit negative/uncut sites in this dataset.
+  Dataset represents verified off-targets with quantitative cleavage rates.
+
+  (4) Assay type: MIXED (paper states curated from GUIDE-seq, Digenome-seq,
+      BLESS, HTGTS, IDLV across the full dataset). K562 data cited from
+      ref [44] in DeepCRISPR paper — exact assay for K562 NOT SPECIFIED.
+      *** CRITICAL: If K562 data is Digenome-seq (cell-free), it has the
+      same limitation as CHANGE-seq — CANNOT be used as in-cell positive labels.
+      Verify by checking ref [44] in Zhu et al. 2018.
+
+  (5) Quantitative regression labels: YES (Cleavage Frequency, 0-1 scale)
+      Binary labels: NOT EXPLICITLY PROVIDED (all entries are positive calls)
+
+  Per-guide off-target site counts:
+    sg1   :  39 sites, CF range [0.1088, 0.9884]
+    sg10  :  12 sites, CF range [0.2315, 0.9537]
+    sg11  :   9 sites, CF range [0.3750, 0.9931]
+    sg12  :   1 sites, CF range [0.0001, 0.0001]
+    sg13  :   9 sites, CF range [0.0001, 0.9907]
+    sg14  :   2 sites, CF range [0.6065, 0.8704]
+    sg15  :   5 sites, CF range [0.3125, 0.9792]
+    sg16  : 147 sites, CF range [0.0694, 0.9560]
+    sg17  :   5 sites, CF range [0.0001, 0.5000]
+    sg18  : 133 sites, CF range [0.0718, 0.9699]
+    sg2   :  33 sites, CF range [0.0440, 0.7199]
+    sg3   :   8 sites, CF range [0.0001, 0.8727]
+    sg4   :   2 sites, CF range [0.5370, 0.9352]
+    sg5   :  45 sites, CF range [0.0001, 0.9861]
+    sg6   :   2 sites, CF range [0.6644, 0.6644]
+    sg7   :   8 sites, CF range [0.2593, 0.9954]
+    sg8   :  68 sites, CF range [0.0972, 0.9838]
+    sg9   :   8 sites, CF range [0.0347, 0.3866]
+
+========================================================================
+IMPORTANT NOTES FOR SAFEGENOME PROJECT
+========================================================================
+
+1. ASSAY UNCERTAINTY: The K562 dataset assay type is unconfirmed. The DeepCRISPR
+   paper aggregated data from multiple assays. Must verify ref [44] in Zhu 2018
+   to determine if K562 data is from a cell-based or cell-free assay.
+
+2. NO NEGATIVES: The dataset contains ONLY detected off-target sites (positives).
+   For SafeGenome model training, you need negative sites (Cas-OFFinder candidates
+   that were NOT detected). These negatives are NOT in this file.
+
+3. REGRESSION VS BINARY: The Cleavage Frequency allows regression modeling,
+   but for binary classification you would threshold (e.g., CF > 0.01 = positive).
+
+4. K562 + ALPHAGENOME ADVANTAGE: If the K562 assay is cell-based and valid,
+   this dataset is uniquely valuable: K562 is the only cell type with full
+   DNase + ATAC + histone tracks in AlphaGenome. All 12 sgRNAs would have
+   complete chromatin feature extraction possible.

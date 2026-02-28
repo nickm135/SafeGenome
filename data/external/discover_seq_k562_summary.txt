@@ -1,0 +1,119 @@
+========================================================================
+DISCOVER-SEQ K562 OFF-TARGET DATA ANALYSIS
+Source: Wienert et al. 2019 Science, DOI: 10.1126/science.aav9023
+  PMC: PMC6589096, PMID: 31000663
+  Raw sequencing data: SRA BioProject PRJNA509652
+Date accessed: 2026-02-24
+========================================================================
+
+OVERVIEW
+------------------------------------------------------------------------
+DISCOVER-Seq detects CRISPR off-target sites by ChIP-seq for MRE11,
+a DNA repair protein recruited to double-strand breaks IN CELLS.
+This is an IN-CELL assay � valid for use as ground-truth positive labels.
+Unlike Digenome-seq or CHANGE-seq, chromatin structure IS intact.
+
+SUPPLEMENTARY FILES STATUS
+------------------------------------------------------------------------
+  Tables S1-S8 are hosted at PMC but cannot be downloaded programmatically
+  (HTTP 404 on direct URL access). Access requires browser session on PMC.
+
+  Supplementary PDF accessible at:
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC6589096/bin/NIHMS1030113-supplement-1.pdf
+  (also returns 404 programmatically; use browser)
+
+  Manual download instructions:
+  1. Go to https://pmc.ncbi.nlm.nih.gov/articles/PMC6589096/
+  2. Click each Table S1-S5, S7, S8 to download XLSX files
+  3. Save to data/external/discoverseq_table_s1.xlsx etc.
+
+K562-SPECIFIC DATA (from paper main text + supplementary description)
+------------------------------------------------------------------------
+
+(1) Number of sgRNAs tested in K562: 3
+
+  Guide 1: VEGFA_site2
+    Sequence: GGGTGGGGGGAGTTTGCTCCTGG  (23nt, confirmed from MOESM7/MOESM6)
+    Off-targets found: 57 (by DISCOVER-Seq)
+    Comparison: GUIDE-Seq found fewer � DISCOVER-Seq is more sensitive
+    Table: S1 contains full site list with coordinates and indel frequencies
+
+  Guide 2: RNF2
+    Sequence: not confirmed from available text
+    Off-targets found: 0 (used as negative control � highly specific guide)
+    Used to verify no false positives
+
+  Guide 3: HBB (hemoglobin beta)
+    Sequence: not confirmed from available text
+    Off-targets found: 2
+    Described as having "two off-targets"
+
+(2) Total K562 off-target sites: ~59 (57 + 0 + 2)
+
+(3) Genome build: NOT EXPLICITLY STATED in available text.
+    Likely hg38 (2019 publication, standard at that time).
+    Verify in methods section or supplementary PDF.
+
+(4) Quantitative scores: YES
+    - DISCOVER scores (MRE11 ChIP-seq peak heights) provided
+    - Validated indel frequencies by amplicon-NGS
+    - Paper states: "DISCOVER scores were highly correlated with
+      eventual indel frequencies" (Spearman correlation confirmed)
+    - Threshold for positive call: indel rate > 0.1% above background
+
+(5) sgRNA sequences:
+    VEGFA_site2 = GGGTGGGGGGAGTTTGCTCCTGG (confirmed; matches DeepCRISPR)
+    RNF2: not retrieved (check Table S2 or supplementary PDF)
+    HBB:  not retrieved (check Table S2 or supplementary PDF)
+
+Table descriptions (from PMC page):
+  Table S1: Off-target sequences + indel frequencies for VEGFA_site2 in K562
+  Table S2: Off-target sequences + indel frequencies for other guides
+  Table S3: Comparison of DISCOVER-Seq vs GUIDE-Seq in K562 (VEGFA_site2)
+  Table S4: Patient iPSC data (not K562)
+  Table S5: In vivo mouse liver data (not K562)
+  Table S7: Additional off-target data
+  Table S8: Additional off-target data
+
+RAW DATA ACCESS
+------------------------------------------------------------------------
+  SRA BioProject: PRJNA509652
+  URL: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA509652
+  Contains: MRE11 ChIP-seq reads for all cell types in the study
+  Note: Processing raw reads would require aligning to hg38 and calling peaks
+
+========================================================================
+ASSESSMENT FOR SAFEGENOME PROJECT
+========================================================================
+
+DISCOVER-Seq K562 data is HIGHLY VALUABLE for SafeGenome because:
+
+  ADVANTAGE 1 � Cell type match with AlphaGenome:
+    K562 is the ONLY cell type with full DNase+ATAC+10 histone tracks
+    in AlphaGenome. All 3 DISCOVER-Seq K562 guides would have complete
+    chromatin features available.
+
+  ADVANTAGE 2 � In-cell assay (valid ground truth):
+    DISCOVER-Seq captures actual in-cell cleavage with intact chromatin.
+    Unlike Digenome-seq/CHANGE-seq, chromatin state DOES affect detection.
+    Valid positive labels for binary classification or regression.
+
+  ADVANTAGE 3 � Quantitative scores:
+    DISCOVER scores + validated indel frequencies allow both binary
+    classification and regression modeling.
+
+  LIMITATION 1 � Small dataset:
+    Only 3 sgRNAs / ~59 positive sites in K562.
+    Too small for standalone model training; must combine with other data.
+
+  LIMITATION 2 � Manual download required:
+    Supplementary tables need browser download. Save to:
+    data/external/discoverseq_table_s1.xlsx  (VEGFA_site2 K562 data)
+    data/external/discoverseq_table_s3.xlsx  (DISCOVER vs GUIDE comparison)
+
+  NOTE:
+    Decision to include DISCOVER-Seq K562 data could affect model comparison
+    validity. The cell-type strategy (K562 as primary cell type vs HEK293+U2OS)
+    is a fundamental architectural decision for the SafeGenome paper.
+    See PROJECT.md P2.2 and the K562/HEK293/U2OS AlphaGenome track availability
+    analysis.

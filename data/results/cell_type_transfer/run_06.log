@@ -1,0 +1,79 @@
+2026-02-26 01:33:19 [INFO] cell_type_transfer: Cell types for transfer: ['K562', 'HEK293', 'CD4_T_cell', 'Hepatocyte']
+2026-02-26 01:33:19 [INFO] cell_type_transfer: Loaded Model C: 73 features, AUPRC=0.5260±0.0833
+2026-02-26 01:33:19 [INFO] cell_type_transfer: Loaded 12622 candidates for 23 guides
+2026-02-26 01:33:20 [INFO] cell_type_transfer: AlphaGenome client created.
+2026-02-26 01:33:20 [INFO] cell_type_transfer: Validation positives loaded for: ['HEK293', 'K562']
+2026-02-26 01:33:20 [INFO] cell_type_transfer: Starting cell-type transfer analysis ...
+2026-02-26 01:33:20 [INFO] cell_type_transfer: Scoring 12622 candidates across 4 cell types
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_h3k9me3_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_dnase_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_dnase_max' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_dnase_at_site' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_dnase_mean_narrow' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_atac_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_atac_at_site' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_h3k27me3_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_h3k9me3_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_h3k27ac_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_accessibility_binary' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_atac_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_atac_at_site' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_h3k27me3_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_h3k9me3_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+C:\Users\nickm\safegenome\venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1213: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+Feature 'ag_ctcf_mean' is entirely NaN (e.g., no tracks for this cell type); imputing with 0.0
+build_score_matrix: sort_by='cfd_score' not found in transfer_df; sorting by mean risk score descending
+2026-02-26 07:46:50 [INFO] cell_type_transfer: Score matrix: 11650 sites × 4 cell types
+2026-02-26 07:46:50 [INFO] cell_type_transfer: Rank correlation matrix:
+            CD4_T_cell  HEK293  Hepatocyte   K562
+CD4_T_cell       1.000   0.638       0.661  0.730
+HEK293           0.638   1.000       0.710  0.663
+Hepatocyte       0.661   0.710       1.000  0.716
+K562             0.730   0.663       0.716  1.000
+2026-02-26 07:46:50 [INFO] cell_type_transfer: Cell-type transfer complete.  Results saved \u2192 C:\Users\nickm\safegenome\data\results\cell_type_transfer
+2026-02-26 07:46:50 [INFO] cell_type_transfer: Key outputs:
+  C:\Users\nickm\safegenome\data\results\cell_type_transfer/cell_type_transfer_scores.csv
+  C:\Users\nickm\safegenome\data\results\cell_type_transfer/cell_type_score_matrix.csv
+  C:\Users\nickm\safegenome\data\results\cell_type_transfer/figures/fig3_cell_type_heatmap.png
+
+=======================================================
+Validation AUPRC (Model C applied to training cell types)
+=======================================================
+  HEK293          AUPRC=0.4987  n_pos=111.0
+  K562            AUPRC=0.7301  n_pos=155.0
+
+Note: Validation uses sites/positives seen during training.
+This is an in-sample check, not out-of-sample generalisation.
+=======================================================
+
