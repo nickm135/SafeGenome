@@ -1,0 +1,9 @@
+label,ag_feature,exp_feature,category,spearman_r,p_value,n
+DNase mean,ag_dnase_mean,exp_dnase_mean,Accessibility,0.4057181085323818,4.959541277360723e-140,3531
+DNase max,ag_dnase_max,exp_dnase_max,Accessibility,0.41783729664390895,2.9653725761865826e-149,3531
+DNase at site,ag_dnase_at_site,exp_dnase_at_site,Accessibility,0.17714704780241805,2.7727576580734674e-26,3531
+H3K4me3,ag_h3k4me3_mean,exp_h3k4me3_mean,Histone,0.27038245433528707,3.3003812332606945e-60,3531
+H3K27me3,ag_h3k27me3_mean,exp_h3k27me3_mean,Histone,0.6734043664603466,0.0,3531
+H3K9me3,ag_h3k9me3_mean,exp_h3k9me3_mean,Histone,,,3531
+H3K27ac,ag_h3k27ac_mean,exp_h3k27ac_mean,Histone,0.6252348732409586,0.0,3531
+Accessibility binary,ag_accessibility_binary,exp_accessibility_binary,Accessibility,0.5073337846868798,2.4119236124884113e-230,3531
