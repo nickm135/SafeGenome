@@ -1,0 +1,21 @@
+comparison,test,p_value,n,effect_size,significant_005
+A vs C,"Wilcoxon signed-rank (per-guide, two-sided)",0.009524548662385321,58,0.033767585736626526,True
+A vs C,"Wilcoxon signed-rank (per-guide, one-sided)",0.0047622743311926605,58,0.033767585736626526,True
+B vs C,"Wilcoxon signed-rank (per-guide, two-sided)",0.6741068270823557,58,0.021435327618440247,False
+B vs C,"Wilcoxon signed-rank (per-guide, one-sided)",0.33705341354117785,58,0.021435327618440247,False
+A vs B,"Wilcoxon signed-rank (per-guide, two-sided)",0.054254195013277585,58,0.012332258118186279,False
+A vs B,"Wilcoxon signed-rank (per-guide, one-sided)",0.027127097506638793,58,0.012332258118186279,True
+A vs C,"Paired t-test (per-guide, two-sided)",0.01668065380456743,58,0.033767585736626526,True
+A vs C,"Paired t-test (per-guide, one-sided)",0.008340326902283715,58,0.033767585736626526,True
+B vs C,"Paired t-test (per-guide, two-sided)",0.23248149892690145,58,0.021435327618440247,False
+B vs C,"Paired t-test (per-guide, one-sided)",0.11624074946345073,58,0.021435327618440247,False
+A vs B,"Paired t-test (per-guide, two-sided)",0.5098300442517009,58,0.012332258118186279,False
+A vs B,"Paired t-test (per-guide, one-sided)",0.25491502212585043,58,0.012332258118186279,False
+A vs C,Guide-level permutation (10k iter),0.0072,58,0.03376758573662648,True
+B vs C,Guide-level permutation (10k iter),0.1252,58,0.021435327618439963,False
+A vs B,Guide-level permutation (10k iter),0.2816,58,0.012332258118186517,False
+A vs C,Paired bootstrap on pooled OOF (10k resamples),0.0154,10000,0.013993052970827424,True
+B vs C,Paired bootstrap on pooled OOF (10k resamples),0.8473,10000,-0.005678284550671819,False
+A vs B,Paired bootstrap on pooled OOF (10k resamples),0.0016,10000,0.019671337521499244,True
+A vs C,Mixed-effects model (Linear mixed-effects model),0.07350474354140067,15578,-0.0045015389914011775,False
+B vs C,Mixed-effects model (Linear mixed-effects model),0.376180300955576,15578,0.0022043865255583603,False

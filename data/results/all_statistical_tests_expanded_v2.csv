@@ -1,0 +1,22 @@
+comparison,test,p_value,n,effect_size,significant_005
+A vs C,"Wilcoxon signed-rank (per-guide, two-sided)",0.12802273961367377,58,0.015341787020768716,False
+A vs C,"Wilcoxon signed-rank (per-guide, one-sided)",0.06401136980683689,58,0.015341787020768716,False
+B vs C,"Wilcoxon signed-rank (per-guide, two-sided)",0.9722266643503862,58,0.0030095289025824368,False
+B vs C,"Wilcoxon signed-rank (per-guide, one-sided)",0.4861133321751931,58,0.0030095289025824368,False
+A vs B,"Wilcoxon signed-rank (per-guide, two-sided)",0.054254195013277585,58,0.012332258118186279,False
+A vs B,"Wilcoxon signed-rank (per-guide, one-sided)",0.027127097506638793,58,0.012332258118186279,True
+A vs C,"Paired t-test (per-guide, two-sided)",0.4275336899691804,58,0.015341787020768716,False
+A vs C,"Paired t-test (per-guide, one-sided)",0.2137668449845902,58,0.015341787020768716,False
+B vs C,"Paired t-test (per-guide, two-sided)",0.8000725367408238,58,0.0030095289025824368,False
+B vs C,"Paired t-test (per-guide, one-sided)",0.4000362683704119,58,0.0030095289025824368,False
+A vs B,"Paired t-test (per-guide, two-sided)",0.5098300442517009,58,0.012332258118186279,False
+A vs B,"Paired t-test (per-guide, one-sided)",0.25491502212585043,58,0.012332258118186279,False
+A vs C,Guide-level permutation (10k iter),0.2324,58,0.01534178702076858,False
+B vs C,Guide-level permutation (10k iter),0.4068,58,0.003009528902582064,False
+A vs B,Guide-level permutation (10k iter),0.2816,58,0.012332258118186517,False
+A vs C,Paired bootstrap on pooled OOF (10k resamples),0.5161,10000,-0.0007316537851898008,False
+B vs C,Paired bootstrap on pooled OOF (10k resamples),0.9937,10000,-0.020402991306689044,False
+A vs B,Paired bootstrap on pooled OOF (10k resamples),0.0016,10000,0.019671337521499244,True
+A vs C,Mixed-effects model (Linear mixed-effects model),2.3609112484117878e-20,15578,-0.02232820032000335,True
+B vs C,Mixed-effects model (Linear mixed-effects model),6.330065042989162e-11,15578,-0.015622274803043922,True
+A vs B,Mixed-effects model (Linear mixed-effects model),0.007535346805537909,15578,-0.006705925516959364,True

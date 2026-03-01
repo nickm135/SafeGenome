@@ -1,0 +1,4 @@
+n_guides,observed_mean_diff,n_permutations,count_ge_observed,p_value,comparison
+58,0.03376758573662648,10000,72,0.0072,A_vs_C
+58,0.021435327618439963,10000,1252,0.1252,B_vs_C
+58,0.012332258118186517,10000,2816,0.2816,A_vs_B

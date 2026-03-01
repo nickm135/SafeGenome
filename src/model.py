@@ -57,7 +57,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 #: Default cell types for Models B and C (where chromatin data exists).
-MODEL_BC_CELL_TYPES: list[str] = ["K562", "HEK293"]
+MODEL_BC_CELL_TYPES: list[str] = ["K562", "HEK293", "CD4_Tcell"]
 
 #: Default number of CV folds.
 DEFAULT_N_SPLITS: int = 5
